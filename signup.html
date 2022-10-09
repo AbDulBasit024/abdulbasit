@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            width: 100%;
+            height: 90vh;
+        }
+        .formbox{
+            background-color: gainsboro;
+            width: 400px;
+        } 
+        form{
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="formbox">
+    <form>
+        <label for="firsname">First name</label>
+        <input id="firstname" type="text" name="First Name">
+        <label for="lastname">Last Name</label>
+        <input id="lastname" type="text" name="Last Name">
+        <label for="email">Email Address</label>
+        <input id="email" type="email" name="Email Address">
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password">
+        <label for="confirmpassword">Confirm Passsword</label>
+        <input id="confirmpassword" type="password" name="confirmpassword">
+        <button>Signup</button>
+    </form>
+</div>
+</body>
+</html>
