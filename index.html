@@ -8,20 +8,20 @@
     <title>eX Developers | It's All About Web</title>
   </head>
   <body>
-<!-- Header Start -->
+<!-- Header -->
 <div class="container">
       <h1><a href="index.html">eX Developers</a></h1>
         <ul>
           <li><a href="">Home</a></li>
           <li><a href="#ourprojectsheader">Portfolio</a></li>
           <li><a href="#servicesheader">Services</a></li>
-          <li><a href="">Contact us</a></li>
+          <li><a href="#contactUsHeader">Contact us</a></li>
         </ul>
         <div class="navbuttons">
-          <a href="signup.html" class="button">Get a quote</a>
+          <a href="signup.html" class="navButton">Get a quote</a>
       </div>
     </div>
-    <!-- Hero Start   -->
+    <!-- Hero -->
     <div class="hero">
       <div class="herotext">
       <h4>Hi, I am</h4>
@@ -29,15 +29,16 @@
       <h1>We build things for the web.</h1>
       <p>Web Designing | Web Development | UI UX Design</p>
       <br />
-      <button>Contact Us</button>
+      <div class="heroButtons">
+        <a href="#contactUsHeader" class="heroButton">Contact Us</a>
+    </div>
     </div>
     <div class="heroimage">
       <img src="https://i.pinimg.com/564x/5d/e9/b6/5de9b6d2907109ada7091c8423dd305e.jpg" alt="">
     </div>
     </div>
-<!--  HEADER END -->
-
-<!-- OUR SERVICES START  -->
+<main>
+<!-- OUR SERVICES  -->
     <section id="servicesheader">
       <h1>OUR CREATIVE SERVICES</h1>
       <div class="services">
@@ -67,7 +68,6 @@
       </div>
       </div>
   </section>
- <!-- OUR SERVICES END -->
 
 <!-- VISIT OUR PROJECTS  -->
   <section id="ourprojectsheader">
@@ -112,10 +112,22 @@
     </div> -->
   </div>
 </div>
+<div class="ourProjectButtons">
+  <a href="#" class="viewMoreProjects">View More</a>
+</div>
 </section>
-<!-- VISIT OUR PROJECTS END -->
-<section class="leaveamessage">
-<div class="contactus">
+
+<!-- CONTACT US -->
+<section id="contactUsHeader">
+  <h1 class="contactUsHeading">CONTACT US</h1>
+ <div class="contactUsBox">
+  <div class="contactusimg">
+    <!-- <img src="https://assets.bigcartel.com/assets/237735/hear.png?w=2400&h=2400&fit=clip" alt=""> -->
+    <h1>WE'D LOVE</h1>
+    <h1>TO HEAR</h1>
+    <h1>FROM YOU</h1>
+  </div>
+  <div class="contactus">
     <form class="contactusform">
       <h1>LEAVE A MESSAGE</h1>
         <div class="yourname">
@@ -134,9 +146,10 @@
       <button type="submit">Send Message</button>
     </div>
     </form>
-</div>
+  </div>
+ </div>
 </section>
-
+</main>
 <!-- FOOTER START -->
 <footer> 
   <div class="myfooter">
@@ -155,11 +168,11 @@
   <div class="quicklinks">
     <h1>Quick Links</h1>
     <ul>
-      <li><a href="">Home</a></li>
+      <li><a href="#">Home</a></li>
       <li><a href="">About Us</a></li>
-      <li><a href="">Our Services</a></li>
+      <li><a href="#servicesheader">Our Services</a></li>
       <li><a href="">Meet The Team</a></li>
-      <li><a href="">Contact Us</a></li>
+      <li><a href="#contactUsHeader">Contact Us</a></li>
     </ul>
   </div>
   <div class="newsletter">
@@ -175,6 +188,5 @@
 <div class="footbar">
   <p>Copyright &copy; Reserved eXdevelopers | By Abdul Basit</p>
 </div>
-<!-- FOOTER END !!! -->
 </body>
 </html>
