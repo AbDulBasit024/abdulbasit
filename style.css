@@ -13,9 +13,7 @@ body{
 }
 /* HEADER */
 .container{
-  margin: 5px;
   display: flex;
-  border-radius: 50px;
   align-items: center;
   background-color: rgb(36, 36, 36);
   justify-content: space-between;
@@ -66,14 +64,11 @@ body{
 }
 .hero{
   display: flex;
-  margin: 5px;
-  border-radius: 20px;
   align-items: center;
   justify-content: space-between;
   padding: 0 150px;
   background-color: white;
   height: 90vh;
-  /* background-color: gainsboro; */
   background: linear-gradient(274deg, rgba(153,179,215,1) 0%, rgba(207,194,255,1) 100%);
 }
 .herotext{
@@ -128,7 +123,6 @@ main{
   background-color: rgb(244, 244, 244);
   padding: 20px;
   border-radius: 20px;
-  margin: 5px;
 }
 /* OUR SERVICES  */
 #servicesheader{
