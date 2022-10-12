@@ -11,6 +11,7 @@ body{
   width: 100%;
   height: 100vh;
 }
+/* HEADER */
 .container{
   margin: 5px;
   display: flex;
@@ -45,7 +46,7 @@ body{
   color: royalblue;
   transition: 0.3s ease;
 }
-.button {
+.navButton {
   background-color: white;
   font-size: 16px;
   color: black;
@@ -59,11 +60,10 @@ body{
   cursor: pointer;
   transition: 0.3s ease;
 }
-.button:hover{
+.navButton:hover{
   background-color: royalblue;
   color: white;
 }
-/* Hero Section  */
 .hero{
   display: flex;
   margin: 5px;
@@ -94,18 +94,24 @@ body{
 .herotext p {
   font-size: 20px;
 }
-.herotext button{
-font-size: 22px;
-background-color: black;
-color: white;
-border: none;
-padding: 15px 30px;
-border-radius: 30px;
-}
-.herotext button:hover{
-  background-color: royalblue;
+.heroButton{
+  background-color: transparent;
+  border: 2px solid black;
+  font-size: 20px;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
   transition: 0.3s ease;
-  transform: scale(1.1);
+}
+.heroButton:hover{
+  background-color: black;
+  color: white;
+  border-color: transparent;
+  transition: 0.3s ease;
   cursor: pointer;
 }
 .heroimage{
@@ -117,12 +123,14 @@ border-radius: 30px;
 border-radius: 20px;
 box-shadow: rgb(49, 49, 49) 0px 5px 15px;
 }
-.heading  {
-  margin: 5px 0;
-  color: black;
-  text-align: center;
+
+main{
+  background-color: rgb(244, 244, 244);
   padding: 20px;
+  border-radius: 20px;
+  margin: 5px;
 }
+/* OUR SERVICES  */
 #servicesheader{
   width: 100%;
 }
@@ -150,6 +158,7 @@ div.Description {
   text-align: center;
   padding: 10px 20px;
 }
+/* OUR PROJECTS */
 #ourprojectsheader{
 width: 100%;
 margin: 100px 0px;
@@ -171,12 +180,138 @@ div.projectimg{
   overflow: hidden;
   margin: 10px 0;
 }
+.ourProjectButtons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+}
+.viewMoreProjects{
+  background-color: royalblue;
+  border-radius: 30px;
+  font-size: 20px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.viewMoreProjects:hover{
+  background-color: rgb(14, 48, 150);
+}
+/* CONTACT US */
+#contactUsHeader{
+  width: 100%;
+  margin: 100px 0px;
+  }
+#contactUsHeader .contactUsHeading{
+    font-size: 40px;
+    text-align: center;
+    margin: 60px 0;
+  }
+.contactUsBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  margin: 20px 200px;
+}
+.contactusform h1{
+  font-size: 40px;
+  text-align: center;
+  margin: 10px auto;
+}
+.contactusimg{
+  display: flex;
+  background-color:royalblue;
+  height: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, Courier, monospace;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.contactusimg h1{
+  font-size: 100px;
+  margin: 10px 20px;
+}
+.contactus{
+display: flex;
+justify-content: center;
+margin: 10px 20px;
+}
+.contactusform{ 
+  margin: 20px;
+  width: 600px;
+
+}
+.contactusform input{
+  color:black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 10px;
+  background-color: transparent;
+  border:2px solid #000000;
+  transition: all 0.3s;
+  padding: 15px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+.contactusform textarea{
+  color:black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: transparent;
+  border:2px solid #000000;
+  transition: all 0.3s;
+  padding: 15px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 200px;
+}
+.submit{
+  display: flex;
+  justify-content: center;
+}
+.submit button{
+  justify-content: center;
+  background-color: royalblue;
+  border-color: transparent;
+  font-size: 16px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.submit button:hover{
+  background-color: rgb(14, 48, 150);
+  color: white;
+}
 footer{
   background-color: rgb(36, 36, 36);
   color: rgb(200, 200, 200);
   height: 30vh;
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 .myfooter{
   display: flex;
@@ -226,7 +361,7 @@ footer h1{
   transition: 0.3s ease;
 }
 .newsletter button:hover{
-  background-color: rgb(33, 86, 243);
+  background-color: rgb(14, 48, 150);
 }
 .footbar{
   display: flex;
@@ -239,85 +374,4 @@ footer h1{
   text-align: center;
   padding: 30px 0px;
 
-}
-.leaveamessage{
-  box-shadow: 0px 0px 10px;
-  border-radius: 10px;
-  padding: 30px;
-  margin: 20px 200px;
-  background-image: url(https://assets.bigcartel.com/assets/237735/hear.png?w=2400&h=2400&fit=clip);
-  background-position: left;
-  background-repeat: no-repeat;
-}
-.contactusform h1{
-  font-size: 40px;
-  text-align: center;
-  margin: 10px auto;
-}
-.contactus{
-display: flex;
-justify-content: flex-end;
-}
-.contactusform{ 
-  margin: 20px;
-  width: 600px;
-
-}
-.contactusform input{
-  color:black;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight:500;
-  font-size: 18px;
-  border-radius: 5px;
-  line-height: 10px;
-  background-color: transparent;
-  border:2px solid #000000;
-  transition: all 0.3s;
-  padding: 15px;
-  margin-bottom: 15px;
-  width:100%;
-  box-sizing: border-box;
-  outline:0;
-}
-.contactusform textarea{
-  color:black;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight:500;
-  font-size: 18px;
-  border-radius: 5px;
-  line-height: 10px;
-  background-color: transparent;
-  border:2px solid #000000;
-  transition: all 0.3s;
-  padding: 15px;
-  margin-bottom: 15px;
-  width:100%;
-  box-sizing: border-box;
-  outline:0;
-  min-width: 100%;
-  max-width: 100%;
-  min-height: 200px;
-}
-.submit{
-  display: flex;
-  justify-content: center;
-}
-.submit button{
-  justify-content: center;
-  background-color: royalblue;
-  border-color: transparent;
-  font-size: 16px;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 10px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 20px;
-  margin: 4px 2px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-.submit button:hover{
-  background-color: royalblue;
-  color: white;
 }
